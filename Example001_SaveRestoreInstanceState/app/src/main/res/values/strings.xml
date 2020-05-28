@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Example001_SaveAndRestoreInstanceStates</string>
+    <string name="button">Button</string>
+    <string name="stringSlideSwitch">ISLAM</string>
+</resources>

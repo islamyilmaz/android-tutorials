@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Example002_OpenAnActivityWithIntent</string>
+    <string name="buttonString">Diger ekrana geç</string>
+    <string name="activity2TextViewString">Bu ekran ikinci aktivite içerisindedir</string>
+</resources>
