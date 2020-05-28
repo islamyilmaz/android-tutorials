@@ -1,6 +1,6 @@
-# android-tutorials
-just try to learn something.
+# Basic Android Tutorials
 
-Example000  : Button onClickListener
-Example001  : Save and Restore Instance State
-Example002  : Open an Activity with Intent
+  - Example000 : Button onClickListener 
+  - Example001 : Save and Restore Instance State 
+  - Example002 : Open an Activity with Intent
+
