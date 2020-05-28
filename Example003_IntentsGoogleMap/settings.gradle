@@ -1,0 +1,2 @@
+rootProject.name='Example003_IntentsGoogleMap'
+include ':app'
