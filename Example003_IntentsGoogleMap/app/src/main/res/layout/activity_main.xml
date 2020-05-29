@@ -32,28 +32,53 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="44dp" />
+            android:layout_height="28dp" />
 
-        <Button
-            android:id="@+id/buttonGotoLocation"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="buttonPressed"
-            android:text="Maps/Anitkabir" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/buttonApp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="buttonPressed"
-            android:text="Playstore/HayatEveSigar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/buttonSocialMedia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="buttonPressed"
-            android:text="Twitter/csnaber" />
+                <Button
+                    android:id="@+id/buttonGotoLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonPressed"
+                    android:text="Maps/Anitkabir" />
+
+                <Button
+                    android:id="@+id/buttonApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonPressed"
+                    android:text="Playstore/HayatEveSigar" />
+
+                <Button
+                    android:id="@+id/buttonSocialMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonPressed"
+                    android:text="Twitter/csnaber" />
+
+                <Button
+                    android:id="@+id/buttonSendEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonPressed"
+                    android:text="Send Email" />
+
+                <Button
+                    android:id="@+id/buttonSendImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="buttonPressed"
+                    android:text="Send Image" />
+            </LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

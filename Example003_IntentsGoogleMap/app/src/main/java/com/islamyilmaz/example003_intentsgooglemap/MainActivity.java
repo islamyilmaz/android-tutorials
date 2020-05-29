@@ -2,12 +2,17 @@ package com.islamyilmaz.example003_intentsgooglemap;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,5 +48,27 @@ public class MainActivity extends AppCompatActivity {
             chooser = Intent.createChooser(intent,"Launch Twitter");
             startActivity(chooser);
         }
+
+        if(v.getId() == R.id.buttonSendEmail){
+            Log.i("islam","Send email button pressed");
+            intent = new Intent(Intent.ACTION_SEND);
+            intent.setData(Uri.parse("mailto:"));
+            String [] to = {"islamyilmaz@yahoo.com"};
+            intent.putExtra(Intent.EXTRA_EMAIL, to);
+            intent.putExtra(Intent.EXTRA_SUBJECT,"Mail konu bölümü");
+            intent.putExtra(Intent.EXTRA_TEXT,"Mail mesaj bölümü.");
+            intent.setType("message/rfc822");
+            chooser = Intent.createChooser(intent,"Send Email");
+            startActivity(chooser);
+        }
+
+        if(v.getId() == R.id.buttonSendImage){
+            Uri imageUri = Uri.parse("android.resources://"+ getPackageName() +"/drawable/" + R.drawable.logo);
+            intent = new Intent(Intent.ACTION_SEND);
+            intent.setType("image/*");
+            intent.putExtra(Intent.EXTRA_STREAM, imageUri);
+            startActivity(Intent.createChooser(intent, "Send Image"));
+        }
+
     }
 }
